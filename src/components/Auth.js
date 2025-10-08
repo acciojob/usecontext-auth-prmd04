@@ -16,7 +16,7 @@ const Auth = () => {
     <>
     <h1>Click on the checkbox to get authenticated</h1>
     <div >
-      <h3>{(auth.isAuthenticated)?"You are now authenticated, you can proceed":"you are not authenticated"}</h3>
+      <p className='authText'>{(auth.isAuthenticated)?"You are now authenticated, you can proceed":"you are not authenticated"}</p>
       <input type='checkbox'
       onChange={handleChange}/>
       <label>i am not robot</label>
